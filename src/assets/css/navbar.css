@@ -1,0 +1,11 @@
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 25px;
+  text-decoration: none;
+  color: #000;
+}
