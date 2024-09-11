@@ -39,11 +39,59 @@ h1 {
 p {
   font-size: 1.2rem;
 }
-.arrow-image{
-   position: absolute;
-   bottom: -30px;
-   left: 20px;
-   width: 150px;
-   z-index: 2;
+.arrow-image {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  width: 150px;
+  z-index: 2;
 }
 
+.cozy-options {
+  display: flex;
+}
+/* */
+
+.cozy-options li {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.cozy-options ul {
+  list-style-type: none;
+}
+
+.cozy-options li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.cozy-options li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../svg/Check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+/* Perks  */
+.perks {
+  display: flex;
+  align-items: center;
+  padding: 20px 4rem;
+}
+
+.perks p {
+  font-size: 15px;
+}
