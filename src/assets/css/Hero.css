@@ -1,0 +1,97 @@
+.hero-section {
+  display: flex;
+  position: relative;
+  height: 80vh;
+}
+
+.hero-image-container {
+  flex: 1;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-content-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-content {
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  max-width: 500px;
+  border-radius: 10px;
+  position: absolute;
+  left: -50px;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+.arrow-image {
+  position: absolute;
+  bottom: -30px;
+  left: 20px;
+  width: 150px;
+  z-index: 2;
+}
+
+.cozy-options {
+  display: flex;
+}
+/* */
+
+.cozy-options li {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+.cozy-options ul {
+  list-style-type: none;
+}
+
+.cozy-options li {
+  position: relative;
+  padding-left: 30px;
+}
+
+.cozy-options li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../svg/Check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  display: flex;
+  justify-content: space-around;
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+
+/* Perks  */
+.perks {
+  display: flex;
+  align-items: center;
+  padding: 20px 4rem;
+}
+
+.perks p {
+  font-size: 15px;
+}

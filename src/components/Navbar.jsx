@@ -5,7 +5,11 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <h3>Cozy Corner</h3>
+        <h3>
+          <span className="cozy">Cozy</span>
+          <span className="corner">Corner</span>
+        </h3>
+
         <nav>
           <a href="/">Home</a>
           <a href="/">About</a>
