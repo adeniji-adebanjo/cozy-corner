@@ -1,24 +1,30 @@
 import React from "react";
-import "../assets/css/navbar.css";
+import "../assets/css/Navbar.css"; // Import CSS for styling
 
 const Navbar = () => {
   return (
     <>
       <header>
-        <h3>
-          <span className="cozy">Cozy</span>
-          <span className="corner">Corner</span>
-        </h3>
-
-        <nav>
-          <a href="/">Home</a>
-          <a href="/">About</a>
-          <a href="/">Featured</a>
-          <a href="/">Blog</a>
-          <a href="/">More</a>
+        <h4 className="logo">GathSession</h4>
+        <nav className="navbar">
+          <ul className="nav-links">
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#features">Features</a>
+            </li>
+            <li>
+              <a href="#blog">Blog</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+            <li>
+              <a href="#about">About Us</a>
+            </li>
+          </ul>
         </nav>
-        <button type="button">Sign In</button>
-        <button type="button">SignUp</button>
       </header>
     </>
   );

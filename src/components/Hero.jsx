@@ -1,74 +1,62 @@
 import React from "react";
 import "../assets/css/Hero.css";
-import heroImage from "../assets/images/hero-img.png";
-import arrowimage from "../assets/images/arrow.svg";
-import location from "../assets/svg/Location.svg";
-import room from "../assets/svg/Room.svg";
-import wifi from "../assets/svg/wifi.svg";
+import messages2 from "../assets/svg/messages2.svg";
+import calendar2 from "../assets/svg/calendar2.svg";
+import map from "../assets/svg/map.svg";
+import content from "../assets/svg/content.svg";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <>
-      <section>
-        <div className="hero-section">
-          <div className=" hero-image-container">
-            <img src={heroImage} alt="Hero" className="hero-image" />
-          </div>
-          <div className="hero-content-container">
-            <div className="hero-content">
-              <h1>
-                Find your comfort <br /> working zone with <br /> Cozy Corner
-              </h1>
-              <h6>
-                Change your work environment by using a co-working place, <br />
-                to meet new people and gain a new network
-              </h6>
-            </div>
-          </div>
+    <section className="hero-section">
+      <div className="hero-content">
+        <h1 className="hero-title">
+          Build your best community starting from here.
+        </h1>
+        <p className="hero-description">
+          Meet and communicate with the best people to run projects, events, or
+          other activities in a more effective and fun way.
+        </p>
+        <div className="hero-buttons">
+          <a href="/" className="btn primary-btn">
+            Get Started
+          </a>
+          <a href="/" className="btn secondary-btn">
+            Learn More
+          </a>
         </div>
-
-        <div className="slider">
-          <div className="slider1">
-            <img src={arrowimage} alt="arrow" className="arrow-image" />
+        <div className="hero-features">
+          <div className="feature">
+            <img
+              src={messages2}
+              alt="Build Community Icon"
+              className="feature-icon"
+            />
+            <span>Build Community</span>
           </div>
-          <div className="slider2">
-            <div className="cozy-options">
-              <div className="opt">
-                <ul>
-                  <li>Virtual Office Event</li>
-                  <li>Space for Office </li>
-                </ul>
-              </div>
-              <div className="opt">
-                <ul>
-                  <li>Open Workspace </li>
-                  <li>Chill-out Zone</li>
-                </ul>
-              </div>
-            </div>
+          <div className="feature">
+            <img
+              src={calendar2}
+              alt="Share Events Icon"
+              className="feature-icon"
+            />
+            <span>Share Events</span>
           </div>
-        </div>
-      </section>
-
-      <div className="perks">
-        <div className="perk1">
-          <img src={location} height={"80px"} width={"80px"} alt="" />
-          <h4>20+ location</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="perk2">
-          <img src={room} height={"80px"} width={"80px"} alt="" />
-          <h4>324 Rooms Available</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div className="perk3">
-          <img src={wifi} height={"80px"} width={"80px"} alt="" />
-          <h4>100% Internet Connection</h4>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <div className="feature">
+            <img
+              src={map}
+              alt="Get Information Icon"
+              className="feature-icon"
+            />
+            <span>Get Information</span>
+          </div>
         </div>
       </div>
-    </>
+
+      <div class="hero-images">
+        <img src={content} alt="Person 2" id="hero-image" />
+      </div>
+    </section>
   );
 };
 
-export default Hero;
+export default HeroSection;
